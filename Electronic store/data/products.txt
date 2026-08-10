@@ -1,0 +1,6 @@
+1,HP Pavillion Gaming,Laptops,50000.0
+2,iphone 16 pro max,Mobile phones,200000.0
+3,HP Victus Gaming,Laptops,80000.0
+4,RedGear cosmo 7.1,Headphones,2000.0
+5,Red Dragon Elite Gaming mouse,Mouse,3000.0
+6,PORTRONICS Hydra 10 wireless,Keyboards,3000.0

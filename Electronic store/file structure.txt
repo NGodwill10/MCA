@@ -1,0 +1,36 @@
+electronic-store/
+├── data/                       
+│   ├── products.txt
+│   ├── customers.txt
+│   ├── staff.txt
+│   ├── suppliers.txt
+│   ├── stocks.txt
+│   ├── bills.txt
+│   ├── repairs.txt
+│   └── stakeholders.txt
+│
+└── src/
+    ├── model/
+    │   ├── Product.java
+    |   ├── Person.java
+    │   ├── Customer.java
+    │   ├── Staff.java
+    │   ├── Supplier.java
+    │   ├── Warehouse.java
+    │   ├── Bill.java   (interface)
+    │   ├── Stakeholder.java    (interface)
+    │   ├── Investor.java
+    │   └── Owner.java
+    │
+    ├── service/
+    │   ├── AutoId.java                 
+    │   ├── FileService.java                    
+    │   ├── StaffService.java
+    │   ├── ProductService.java
+    │   ├── CustomerService.java
+    │   ├── InventoryService.java
+    │   ├── BillingService.java                 
+    │   ├── StakeholderService.java
+    │   └── RepairService.java
+    │
+    └── Main.java              
