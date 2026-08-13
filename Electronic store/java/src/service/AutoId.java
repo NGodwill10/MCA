@@ -21,9 +21,10 @@ public class AutoId {
                 return 1;
             }
 
-            // Get the last line and parse it as an integer
+            // Get the last line and extract the ID (first field)
             String lastLine = lines.get(lines.size() - 1);
-            int lastId = Integer.parseInt(lastLine.trim());
+            String[] fields = lastLine.split(","); // Split the line by commas
+            int lastId = Integer.parseInt(fields[0].trim()); // Parse the first field as an integer
 
             // Return the next ID by incrementing the last ID
             return lastId + 1;

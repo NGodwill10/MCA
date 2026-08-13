@@ -34,7 +34,9 @@ public class ProductService {
                     String category = new java.util.Scanner(System.in).nextLine();
                     System.out.print("Enter product price: ");
                     float price = new java.util.Scanner(System.in).nextFloat();
-                    addProduct(name, category, price);
+                    int id = AutoId.getNextId("data/products.txt");
+                    Product product = new Product(id, name, category, price);
+                    product.addProduct(product);
                     break;
 
                 case 2:
