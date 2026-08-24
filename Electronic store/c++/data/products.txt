@@ -1,2 +1,0 @@
-1,Hp Pavillion Gaming 16,Laptop,50000.000000
-2,macbook air,laptop,100000
