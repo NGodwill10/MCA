@@ -1,0 +1,2 @@
+1,Yeshwant,Yeshwant@mail,Owner,80,500000
+2,Vinay Sharma,Vinay@mail,Investor,20,200000

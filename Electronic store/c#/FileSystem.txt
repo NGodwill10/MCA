@@ -1,0 +1,26 @@
+ElectronicStoreSystem/
+│
+├── data/
+│   ├── customers.txt
+│   ├── products.txt
+│   ├── staff.txt
+│   ├── stakeholders.txt
+│   └── stock.txt
+│
+├── src/
+│   ├── Models/
+│   │   ├── Customer.cs
+│   │   ├── Product.cs
+│   │   ├── Staff.cs
+│   │   ├── Stakeholder.cs
+│   │   └── StockItem.cs
+│   │
+│   ├── Services/
+│   │   ├── AppConfig.cs
+│   │   ├── FileManager.cs
+│   │   ├── AutoIdGenerator.cs
+│   │   └── StoreServices.cs
+│   │
+│   └── ElectronicStoreSystem.csproj
+│
+└── Program.cs
