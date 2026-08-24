@@ -1,13 +1,16 @@
 ElectronicStoreSystem/
-├── include/
-├── Core/
-│ ├── Entities.hpp # Core entity classes (Customer, Staff, Product, Bill, etc.)
-│ └── Stakeholder.hpp # Stakeholder inheritance hierarchy (Investor, Owner)
-└── Store/
-    └── ElectronicStore.hpp # Main management class encapsulating store operations
+│
+├── data/
+│   ├── customers.txt
+│   ├── products.txt
+│   ├── staff.txt
+│   ├── stakeholders.txt
+│   └── stock.txt
+│
 ├── src/
-│ ├── Entities.cpp
-│ ├── Stakeholder.cpp
-│ └── ElectronicStore.cpp
-└── app/
-    └── main.cpp # Execution entry point
+│   ├── Models.hpp
+│   ├── FileManager.hpp
+│   ├── AutoIdGenerator.hpp
+│   └── StoreServices.hpp
+│
+└── main.cpp
