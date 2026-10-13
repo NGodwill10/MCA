@@ -1,0 +1,19 @@
+=== NIRF CST REPORT ===
+
+--- STUDENTS ---
+Name: Vaibhav Ghadi, Course: MCA (2022-2023)
+Name: Vinay Sharma, Course: MCA (2023-2024)
+
+--- TEACHING STAFF ---
+Somestaff (2022-2023)
+
+--- NON-TEACHING STAFF ---
+No non-teaching staff recorded.
+
+--- MSC AI ACTIVITIES ---
+
+--- MSC DS ACTIVITIES ---
+
+--- MCA ACTIVITIES ---
+ISA
+Infofest
