@@ -14,6 +14,7 @@ package service;
 
 import model.Bill;
 import model.Customer;
+import java.util.Scanner;
 
 public class CustomerService {
     String name;
@@ -21,7 +22,7 @@ public class CustomerService {
     String email;
     int id;
 
-    public CustomerService() {
+    public CustomerService(Scanner scanner) {
         int input;
         do {
             System.out.println("\n--- Customer Management ---");
@@ -33,18 +34,18 @@ public class CustomerService {
             System.out.println("6. Request Product Repair");
             System.out.println("0. Back to Main Menu");
 
-            input = new java.util.Scanner(System.in).nextInt();
-            new java.util.Scanner(System.in).nextLine(); // Clear scanner buffer
+            input = scanner.nextInt();
+            scanner.nextLine();
 
             switch (input) {
                 case 1:
                     int id = AutoId.getNextId("data/customers.txt");
                     System.out.print("Enter customer name: ");
-                    name = new java.util.Scanner(System.in).nextLine();
+                    name = scanner.nextLine();
                     System.out.print("Enter customer address: ");
-                    address = new java.util.Scanner(System.in).nextLine();
+                    address = scanner.nextLine();
                     System.out.print("Enter customer email: ");
-                    email = new java.util.Scanner(System.in).nextLine();
+                    email = scanner.nextLine();
 
                     Customer customer = new Customer(id, name, address, email);
                     customer.addCustomer(customer);
@@ -52,13 +53,13 @@ public class CustomerService {
 
                 case 2:
                     System.out.print("Enter customer ID to remove: ");
-                    int removeId = new java.util.Scanner(System.in).nextInt();
+                    int removeId = scanner.nextInt();
                     Customer.removeCustomerById(removeId);
                     break;
 
                 case 3:
                     System.out.print("Enter customer ID to display details: ");
-                    int displayId = new java.util.Scanner(System.in).nextInt();
+                    int displayId = scanner.nextInt();
                     Customer.display(displayId);
                     break;
 
@@ -68,20 +69,20 @@ public class CustomerService {
 
                 case 5:
                     System.out.print("Enter customer ID to generate bill: ");
-                    int customerId = new java.util.Scanner(System.in).nextInt();
-                    new java.util.Scanner(System.in).nextLine(); // Clear scanner buffer
-                    BillingService newBill = new BillingService(customerId);
+                    int customerId = scanner.nextInt();
+                    scanner.nextLine();
+                    BillingService newBill = new BillingService(customerId, scanner);
                     break;
 
                 case 6:
                     System.out.println("\n--- Product Repair Request ---");
                     System.out.println("Enter Product ID to repair:");
-                    int repairProductId = new java.util.Scanner(System.in).nextInt();
+                    int repairProductId = scanner.nextInt();
                     System.out.print("Enter customer ID:");
-                    int repairCustomerId = new java.util.Scanner(System.in).nextInt();
+                    int repairCustomerId = scanner.nextInt();
                     System.out.println("Enter staff ID to assign repair to:");
-                    int repairStaffId = new java.util.Scanner(System.in).nextInt();
-                    new java.util.Scanner(System.in).nextLine(); // Clear scanner buffer
+                    int repairStaffId = scanner.nextInt();
+                    scanner.nextLine();
                     RepairService repairService = new RepairService();
                     repairService.requestRepair(repairProductId, repairCustomerId, repairStaffId);
                     break;

@@ -20,7 +20,7 @@ public class Warehouse {
 
                 if (id == supplierId) {
                     supplierName = fields[1]; // Get the supplier name
-                    supplierEmail = fields[3]; // Get the supplier email
+                    supplierEmail = fields[2]; // Get the supplier email
                     break;
                 }
             }
@@ -69,7 +69,7 @@ public class Warehouse {
          */
     }
 
-    public static void requestProduct(int productId, int quantity) {
+    public static void requestProduct(int productId, int quantity, java.util.Scanner scanner) {
         try {
             // Read all lines from stocks.txt
             List<String> stockLines = FileService.readAllLines("data/stocks.txt");
@@ -103,7 +103,7 @@ public class Warehouse {
 
                         // Call orderProduct to order more stock
                         System.out.println("Enter Supplier Id to order from:");
-                        int supplierId = new java.util.Scanner(System.in).nextInt();
+                        int supplierId = scanner.nextInt();
                         orderProduct(productId, supplierId, requiredQuantity);
 
                         // Update the quantities after the order

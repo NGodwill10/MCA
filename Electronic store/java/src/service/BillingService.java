@@ -19,18 +19,16 @@ import java.util.Scanner;
 
 public class BillingService implements Bill {
     private int itemCount = 0; // To keep track of the number of items in the itemList
-    private int billId; // Auto-generated bill ID
+    private final int billId; // Auto-generated bill ID
     private final int customerId; // Customer ID for the bill
     private final String billFilePath = "data/bills.txt"; // File to store bills
     int input; // Variable to store user input for product ID
 
-    public static float total;
-    static Product product = itemList[50];
+    private final Scanner sc;
 
-    Scanner sc = new Scanner(System.in);
-
-    public BillingService(int customerId) {
+    public BillingService(int customerId, Scanner scanner) {
         this.customerId = customerId;
+        this.sc = scanner;
         this.billId = AutoId.getNextId(billFilePath); // Auto-generate bill ID
 
         do {
@@ -44,7 +42,6 @@ public class BillingService implements Bill {
 
             if (input == 0) {
                 calculateTotal();
-                displayBill(total);
             }
         } while (input != -1);
 
@@ -100,10 +97,13 @@ public class BillingService implements Bill {
 
     @Override
     public float calculateTotal() {
-        total = 0;
+        float total = 0;
         for (int i = 0; i < itemCount; i++) {
             total += itemList[i].getPrice();
         }
+
+        displayBill(total);
+
         return total;
     }
 
@@ -123,12 +123,11 @@ public class BillingService implements Bill {
 
     private void storeBill() {
         try {
-            System.out.println("Storing the bill in the file...");
             StringBuilder billData = new StringBuilder();
-            billData.append(billId).append(",").append(customerId).append(",");
+            billData.append("Bill ID: ").append(billId).append(", Customer ID: ").append(customerId).append("\n");
 
             for (int i = 0; i < itemCount; i++) {
-                itemList[i];
+                Product product = itemList[i];
                 billData.append(product.getId()).append(",")
                         .append(product.getName()).append(",")
                         .append(product.getCategory()).append(",")

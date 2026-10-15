@@ -13,6 +13,7 @@
 package service;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -23,7 +24,7 @@ import java.util.List;
 public class FileService {
 
     public static void appendData(String filePath, String content) throws IOException {
-        Path path = Paths.get(filePath);
+        Path path = resolvePath(filePath);
 
         // Create parent directories if they don't exist
         if (path.getParent() != null && !Files.exists(path.getParent())) {
@@ -36,16 +37,16 @@ public class FileService {
         }
 
         // Append the content to the file
-        Files.writeString(
+        Files.write(
                 path,
-                content + System.lineSeparator(),
+                (content + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),
                 StandardOpenOption.CREATE,
                 StandardOpenOption.APPEND);
     }
 
     // Method to remove a line from a file based on the ID
     public static void removeLineById(String filePath, int id) throws IOException {
-        Path path = Paths.get(filePath);
+        Path path = resolvePath(filePath);
         if (!Files.exists(path)) {
             throw new IOException("File not found: " + filePath);
         }
@@ -62,7 +63,7 @@ public class FileService {
     }
 
     public static List<String> readAllLines(String filePath) throws IOException {
-        Path path = Paths.get(filePath);
+        Path path = resolvePath(filePath);
         if (!Files.exists(path)) {
             return Collections.emptyList();
         }
@@ -70,7 +71,7 @@ public class FileService {
     }
 
     public static void writeAllLines(String filePath, List<String> lines) throws IOException {
-        Path path = Paths.get(filePath);
+        Path path = resolvePath(filePath);
 
         // Create parent directories if they don't exist
         if (path.getParent() != null && !Files.exists(path.getParent())) {
@@ -79,5 +80,17 @@ public class FileService {
 
         // Write all lines to the file
         Files.write(path, lines);
+    }
+
+    private static Path resolvePath(String filePath) {
+        Path path = Paths.get(filePath);
+        if (!path.isAbsolute()
+                && path.getNameCount() > 1
+                && "data".equals(path.getName(0).toString())
+                && !Files.isDirectory(Paths.get("data"))
+                && Files.isDirectory(Paths.get("..", "data"))) {
+            return Paths.get("..").resolve(path).normalize();
+        }
+        return path;
     }
 }
