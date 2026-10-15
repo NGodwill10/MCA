@@ -53,6 +53,25 @@ public class Product {
         this.price = price;
     }
 
+    public static void updatePriceById(int id, float price) {
+        try {
+            java.util.List<String> lines = FileService.readAllLines("data/products.txt");
+            for (int i = 0; i < lines.size(); i++) {
+                String[] parts = lines.get(i).split(",", -1);
+                if (parts.length >= 4 && Integer.parseInt(parts[0].trim()) == id) {
+                    parts[3] = String.valueOf(price);
+                    lines.set(i, String.join(",", parts));
+                    FileService.writeAllLines("data/products.txt", lines);
+                    System.out.println("Product price updated successfully.");
+                    return;
+                }
+            }
+            System.out.println("Product with ID " + id + " not found.");
+        } catch (Exception e) {
+            System.err.println("Failed to update product price: " + e.getMessage());
+        }
+    }
+
     public float getPrice() {
         return price;
     }

@@ -1,0 +1,5 @@
+Bill ID: 1, Customer ID: 1
+1,HP Pavillion Gaming,Laptops,50000.0
+2,iphone 16 pro max,Mobile phones,200000.0
+3,HP Victus Gaming,Laptops,80000.0
+

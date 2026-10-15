@@ -11,9 +11,10 @@
 package service;
 
 import model.Staff;
+import java.util.Scanner;
 
 public class StaffService {
-    public StaffService() {
+    public StaffService(Scanner scanner) {
 
         int input;
 
@@ -25,20 +26,20 @@ public class StaffService {
             System.out.println("4. Display all Staff");
             System.out.println("0. Back to Main Menu");
 
-            input = new java.util.Scanner(System.in).nextInt();
-            new java.util.Scanner(System.in).nextLine(); // Clear scanner buffer
+            input = scanner.nextInt();
+            scanner.nextLine();
 
             switch (input) {
                 case 1:
                     int id = AutoId.getNextId("data/staff.txt");
                     System.out.print("Enter staff name: ");
-                    String name = new java.util.Scanner(System.in).nextLine();
+                    String name = scanner.nextLine();
                     System.out.print("Enter staff address: ");
-                    String address = new java.util.Scanner(System.in).nextLine();
+                    String address = scanner.nextLine();
                     System.out.print("Enter staff email: ");
-                    String email = new java.util.Scanner(System.in).nextLine();
+                    String email = scanner.nextLine();
                     System.out.print("Enter staff salary: ");
-                    float salary = new java.util.Scanner(System.in).nextFloat();
+                    float salary = scanner.nextFloat();
 
                     Staff staff = new Staff(id, name, address, email, salary);
                     staff.addStaff(staff);
@@ -46,13 +47,13 @@ public class StaffService {
 
                 case 2:
                     System.out.print("Enter staff ID to remove: ");
-                    int removeId = new java.util.Scanner(System.in).nextInt();
+                    int removeId = scanner.nextInt();
                     Staff.removeStaffById(removeId);
                     break;
 
                 case 3:
                     System.out.print("Enter staff ID to display details: ");
-                    int displayId = new java.util.Scanner(System.in).nextInt();
+                    int displayId = scanner.nextInt();
                     Staff.display(displayId);
                     break;
 

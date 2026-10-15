@@ -45,23 +45,23 @@ public class Main {
 
             switch (input) {
                 case 1:
-                    ProductService productService = new ProductService();
+                    ProductService productService = new ProductService(sc);
                     break;
 
                 case 2:
-                    CustomerService customerService = new CustomerService();
+                    CustomerService customerService = new CustomerService(sc);
                     break;
 
                 case 3:
-                    StaffService staffService = new StaffService();
+                    StaffService staffService = new StaffService(sc);
                     break;
 
                 case 4:
-                    StakeholderService stakeholderService = new StakeholderService();
+                    StakeholderService stakeholderService = new StakeholderService(sc);
                     break;
 
                 case 5:
-                    InventoryService inventoryService = new InventoryService();
+                    InventoryService inventoryService = new InventoryService(sc);
                     break;
 
                 case 0:

@@ -2,10 +2,11 @@ package service;
 
 import model.Warehouse;
 import model.Supplier;
+import java.util.Scanner;
 
 public class InventoryService {
 
-    public InventoryService() {
+    public InventoryService(Scanner scanner) {
         int input;
 
         do {
@@ -13,24 +14,23 @@ public class InventoryService {
             System.out.println("1. Request Product from Warehouse");
             System.out.println("2. Add Supplier");
             System.out.println("0. Exit to Main Menu");
-            input = new java.util.Scanner(System.in).nextInt();
-            // Clear scanner buffer
-            new java.util.Scanner(System.in).nextLine();
+            input = scanner.nextInt();
+            scanner.nextLine();
 
             switch (input) {
                 case 1:
                     System.out.println("insert product id");
-                    int productId = new java.util.Scanner(System.in).nextInt();
+                    int productId = scanner.nextInt();
                     System.out.println("insert quantity");
-                    int quantity = new java.util.Scanner(System.in).nextInt();
-                    Warehouse.requestProduct(productId, quantity);
+                    int quantity = scanner.nextInt();
+                    Warehouse.requestProduct(productId, quantity, scanner);
                     break;
 
                 case 2:
                     System.out.println("insert supplier name");
-                    String name = new java.util.Scanner(System.in).nextLine();
+                    String name = scanner.nextLine();
                     System.out.println("insert supplier email");
-                    String email = new java.util.Scanner(System.in).nextLine();
+                    String email = scanner.nextLine();
                     Supplier supplier = new Supplier(name, email);
                     supplier.addSupplier();
                     break;

@@ -9,10 +9,11 @@
 package service;
 
 import model.Product;
+import java.util.Scanner;
 
 public class ProductService {
 
-    public ProductService() {
+    public ProductService(Scanner scanner) {
         int input;
         do {
             System.out.println("\n--- Product Management ---");
@@ -23,41 +24,38 @@ public class ProductService {
             System.out.println("5. Display all Products");
             System.out.println("0. Back to Main Menu");
 
-            input = new java.util.Scanner(System.in).nextInt();
-            new java.util.Scanner(System.in).nextLine(); // Clear scanner buffer
+            input = scanner.nextInt();
+            scanner.nextLine();
 
             switch (input) {
                 case 1:
                     System.out.print("Enter product name: ");
-                    String name = new java.util.Scanner(System.in).nextLine();
+                    String name = scanner.nextLine();
                     System.out.print("Enter product category: ");
-                    String category = new java.util.Scanner(System.in).nextLine();
+                    String category = scanner.nextLine();
                     System.out.print("Enter product price: ");
-                    float price = new java.util.Scanner(System.in).nextFloat();
-                    int id = AutoId.getNextId("data/products.txt");
-                    Product product = new Product(id, name, category, price);
-                    product.addProduct(product);
+                    float price = scanner.nextFloat();
+                    addProduct(name, category, price);
                     break;
 
                 case 2:
                     System.out.print("Enter product ID to remove: ");
-                    int removeId = new java.util.Scanner(System.in).nextInt();
+                    int removeId = scanner.nextInt();
                     Product productToRemove = new Product(removeId, "", "", 0);
                     productToRemove.removeProductById(removeId);
                     break;
 
                 case 3:
                     System.out.print("Enter product ID to update price: ");
-                    int updateId = new java.util.Scanner(System.in).nextInt();
+                    int updateId = scanner.nextInt();
                     System.out.print("Enter new price: ");
-                    float newPrice = new java.util.Scanner(System.in).nextFloat();
-                    Product productToUpdate = new Product(updateId, "", "", 0);
-                    productToUpdate.setPrice(newPrice);
+                    float newPrice = scanner.nextFloat();
+                    Product.updatePriceById(updateId, newPrice);
                     break;
 
                 case 4:
                     System.out.print("Enter product ID to display details: ");
-                    int displayId = new java.util.Scanner(System.in).nextInt();
+                    int displayId = scanner.nextInt();
                     Product.display(displayId);
                     break;
 
