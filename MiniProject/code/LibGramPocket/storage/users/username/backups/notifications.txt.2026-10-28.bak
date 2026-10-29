@@ -1,0 +1,8 @@
+notificationId,timestamp,context,type,severity,message,refId,dedupKey,dismissed,schemaVersion
+67862625-3a65-4dfd-aafe-dd23fcb24ca5,2026-10-21T22:17:21.442976,BOOKKEEPING,BOOK_ADDED,INFO,Added *An Integrated Approach to Software Engineering*.,da6b5574-88b3-4ee1-b279-b447d680630f,,false,1
+9850987c-bbcf-49ef-a541-b84d783c7cd0,2026-10-21T22:41:21.066262900,LEND,BOOK_LENT,INFO,Lent *An Integrated Approach to Software Engineering* to Vinay Sharma on 21 Oct 2026 22:41.,1f1d7742-4b19-479d-8f40-caf3490d178e,,false,1
+7b4255e4-93f1-4f2a-a43c-7fea6ddb0eab,2026-10-21T22:41:21.077410700,LEND,BOOK_LENT,INFO,Lent *Cloud Computing Concepts* to Vinay Sharma on 21 Oct 2026 22:41.,27987734-fee7-4cc0-a7b3-f5820bd2c822,,false,1
+4ae7ba90-48d2-4dd0-b056-9e6e8cc1d72b,2026-10-21T22:41:37.259386900,BOOKKEEPING,BOOK_LENT_OUT,INFO,"*An Integrated Approach to Software Engineering* is lent to Vinay Sharma, due 04 Nov.",1f1d7742-4b19-479d-8f40-caf3490d178e,BOOK_LENT_OUT:1f1d7742-4b19-479d-8f40-caf3490d178e:2026-10-21,false,1
+08a93193-7d10-47fa-a5c2-79f3a178269b,2026-10-21T22:41:37.259386900,BOOKKEEPING,BOOK_LENT_OUT,INFO,"*Cloud Computing Concepts* is lent to Vinay Sharma, due 04 Nov.",27987734-fee7-4cc0-a7b3-f5820bd2c822,BOOK_LENT_OUT:27987734-fee7-4cc0-a7b3-f5820bd2c822:2026-10-21,false,1
+925c7321-06a3-4a1a-a9e7-8687748af94d,2026-10-21T22:42:12.757678,LEND,BOOK_RETURNED,INFO,Received *An Integrated Approach to Software Engineering* back from Vinay Sharma on 21 Oct 2026 22:42.,1f1d7742-4b19-479d-8f40-caf3490d178e,,false,1
+a9d30bd9-1e18-4e4e-9d6b-35d7c1cda314,2026-10-21T22:42:12.767591,LEND,BOOK_RETURNED,INFO,Received *Cloud Computing Concepts* back from Vinay Sharma on 21 Oct 2026 22:42.,27987734-fee7-4cc0-a7b3-f5820bd2c822,,false,1

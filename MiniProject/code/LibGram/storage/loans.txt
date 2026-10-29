@@ -1,0 +1,10 @@
+loanId,bookId,bookTitleSnapshot,memberId,issueDate,dueDate,returnDate,status,baseCharge,rentCharge,overdueFine,returnCondition,issuedBy,receivedBy,pricingSnapshot
+# schemaVersion=1
+49cc6a63-4c95-467e-8621-f1a5b2159e5c,def9c91c-73e2-4f08-9982-33525959d18d,Operating system principles,MEM-FDB94CD3,2026-10-21,2026-11-04,2026-10-21,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+138a9175-5967-458b-8314-ae6891b9a6e2,def9c91c-73e2-4f08-9982-33525959d18d,Operating system principles,MEM-FDB94CD3,2026-10-21,2026-11-04,2026-10-21,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+bcbebeef-42d0-4998-9794-62d5abf68922,SAMPLE-BOOK-01,The God of Small Things,MEM-FDB94CD3,2026-10-21,2026-11-04,2026-10-21,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+67269938-7706-4bdd-8932-90d71922dfbf,SAMPLE-BOOK-02,The White Tiger,MEM-FDB94CD3,2026-10-21,2026-11-04,2026-10-21,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+221077eb-517b-448a-9a0c-393ec66d315e,def9c91c-73e2-4f08-9982-33525959d18d,Operating system principles,MEM-FDB94CD3,2026-10-27,2026-11-10,2026-10-27,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+d6855d01-f096-417c-95c4-91bbcdf7f918,SAMPLE-BOOK-01,The God of Small Things,MEM-FDB94CD3,2026-10-27,2026-11-10,2026-10-27,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+d840fe2b-0d5e-4c05-b6f5-8cdf0e65ca74,def9c91c-73e2-4f08-9982-33525959d18d,Operating system principles,MEM-3F5549E2,2026-10-27,2026-11-10,2026-10-27,RETURNED,0.00,0.00,0.00,GOOD,admin,admin,base=0.00;rent=DAY:0.00;penalty=2.00:0.00
+a54c2122-42bd-4707-8040-5aa0056b51d4,def9c91c-73e2-4f08-9982-33525959d18d,Operating system principles,SAMPLE-MEM-01,2026-10-29,2026-11-12,,ACTIVE,0.00,0.00,0.00,,admin,,base=0.00;rent=DAY:0.00;penalty=2.00:0.00

@@ -1,0 +1,2 @@
+userId,username,displayName,role,salt,passwordHash,active,createdAt
+01a4f87d-a7d8-408d-a93a-2504ec07d4b1,admin,admin,ADMIN,78aHh+1Ib+kuzD0u6MC1pg==,6ttkP1tjj+JBjWYLKocR8rlDcsVXgFHPPHiRZQ/rtK0=,true,2026-10-20T18:27:32.460027700

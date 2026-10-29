@@ -1,0 +1,24 @@
+bookId,isbn,title,authors,publisher,publicationYear,edition,category,language,shelfLocation,price,totalCopies,availableCopies,dateAdded
+# schemaVersion=1
+def9c91c-73e2-4f08-9982-33525959d18d,1,Operating system principles,Abraham silberchatz,N/A,2018,9,Comp. Sci.,English,N/A,2000.00,1,1,2026-10-20
+SAMPLE-BOOK-01,9780000000001,The God of Small Things,Arundhati Roy,Sample Press,2024,1,Literary Fiction,English,S-01,450.00,3,3,2026-10-21
+SAMPLE-BOOK-02,9780000000002,The White Tiger,Aravind Adiga,Sample Press,2024,1,Indian Fiction,English,S-02,450.00,3,3,2026-10-21
+SAMPLE-BOOK-03,9780000000003,Train to Pakistan,Khushwant Singh,Sample Press,2024,1,Historical Fiction,English,S-03,450.00,3,3,2026-10-21
+SAMPLE-BOOK-04,9780000000004,The Discovery of India,Jawaharlal Nehru,Sample Press,2024,1,Indian History,English,S-04,450.00,3,3,2026-10-21
+SAMPLE-BOOK-05,9780000000005,India After Gandhi,Ramachandra Guha,Sample Press,2024,1,History,English,S-05,450.00,3,3,2026-10-21
+SAMPLE-BOOK-06,9780000000006,Wings of Fire,A. P. J. Abdul Kalam,Sample Press,2024,1,Biography,English,S-06,450.00,3,3,2026-10-21
+SAMPLE-BOOK-07,9780000000007,The Story of My Experiments with Truth,M. K. Gandhi,Sample Press,2024,1,Autobiography,English,S-07,450.00,3,3,2026-10-21
+SAMPLE-BOOK-08,9780000000008,Malgudi Days,R. K. Narayan,Sample Press,2024,1,Short Stories,English,S-08,450.00,3,3,2026-10-21
+SAMPLE-BOOK-09,9780000000009,The Immortals of Meluha,Amish Tripathi,Sample Press,2024,1,Mythology,English,S-09,450.00,3,3,2026-10-21
+SAMPLE-BOOK-10,9780000000010,Midnight's Children,Salman Rushdie,Sample Press,2024,1,Magical Realism,English,S-10,450.00,3,3,2026-10-21
+SAMPLE-BOOK-11,9780000000011,The Palace of Illusions,Chitra Banerjee Divakaruni,Sample Press,2024,1,Epic Retelling,English,S-11,450.00,3,3,2026-10-21
+SAMPLE-BOOK-12,9780000000012,A Suitable Boy,Vikram Seth,Sample Press,2024,1,Romance,English,S-12,450.00,3,3,2026-10-21
+SAMPLE-BOOK-13,9780000000013,The Namesake,Jhumpa Lahiri,Sample Press,2024,1,Diaspora,English,S-13,450.00,3,3,2026-10-21
+SAMPLE-BOOK-14,9780000000014,The Argumentative Indian,Amartya Sen,Sample Press,2024,1,Essays,English,S-14,450.00,3,3,2026-10-21
+SAMPLE-BOOK-15,9780000000015,The Art of Computer Programming,Donald Knuth,Sample Press,2024,1,Computer Science,English,S-15,450.00,3,3,2026-10-21
+SAMPLE-BOOK-16,9780000000016,Clean Code,Robert C. Martin,Sample Press,2024,1,Software Engineering,English,S-16,450.00,3,3,2026-10-21
+SAMPLE-BOOK-17,9780000000017,Introduction to Algorithms,Thomas H. Cormen,Sample Press,2024,1,Algorithms,English,S-17,450.00,3,3,2026-10-21
+SAMPLE-BOOK-18,9780000000018,Cosmos,Carl Sagan,Sample Press,2024,1,Astronomy,English,S-18,450.00,3,3,2026-10-21
+SAMPLE-BOOK-19,9780000000019,The Selfish Gene,Richard Dawkins,Sample Press,2024,1,Biology,English,S-19,450.00,3,3,2026-10-21
+SAMPLE-BOOK-20,9780000000020,Sapiens,Yuval Noah Harari,Sample Press,2024,1,Anthropology,English,S-20,450.00,3,3,2026-10-21
+a1d0859a-95a9-411c-82ad-eb71d3f5d747,0000000000000,Test,Test,,,,,,,0.00,1,1,2026-10-27

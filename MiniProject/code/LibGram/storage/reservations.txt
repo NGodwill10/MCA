@@ -1,0 +1,2 @@
+reservationId,bookId,bookTitleSnapshot,memberId,reservedAt,status,readyAt,expiresAt,feeChargeId
+# schemaVersion=1

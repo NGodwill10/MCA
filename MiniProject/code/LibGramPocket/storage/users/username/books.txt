@@ -1,0 +1,17 @@
+bookId,ownershipType,lenderContactId,isbn,title,authors,publisher,publicationYear,edition,category,language,price,totalCopies,availableCopies,condition,readingStatus,notes,dateAdded,archived,schemaVersion
+da6b5574-88b3-4ee1-b279-b447d680630f,Owned,,8173197024,An Integrated Approach to Software Engineering,Pankaj Jalote,Narosa,2005,3,Computer Science,English,408.00,1,0,Good,Read,,2026-10-21,false,1
+25e23116-b8f8-4bb4-9698-72d2c712e5e7,Owned,,9780000000001,Software Engineering Fundamentals,N. Sharma,Campus Press,2024,1st,Computer Science,English,350.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+6cf0ff8f-1615-422d-8fae-440d7d222b94,Owned,,9780000000002,Java Programming Laboratory,A. Kulkarni,Campus Press,2024,1st,Computer Science,English,375.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+76dad070-7843-4c36-afd4-db70ed9bfb0b,Owned,,9780000000003,Data Structures in Practice,R. Mehta,Campus Press,2024,1st,Computer Science,English,400.00,2,2,Good,Unread,Sample catalog book,2026-10-21,false,1
+9e8f8031-d7e1-4197-9225-514730bdcdb6,Owned,,9780000000004,Database Design and SQL,P. Nair,Campus Press,2024,1st,Computer Science,English,425.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+33b6de65-7473-4de8-befb-f2c506f71e74,Owned,,9780000000005,Operating Systems Foundations,V. Rao,Campus Press,2024,1st,Computer Science,English,450.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+5e879369-7859-48b9-a801-1e8d3318c1f5,Owned,,9780000000006,Computer Networks Essentials,M. Iyer,Campus Press,2024,1st,Computer Science,English,475.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+8fdeb353-2c78-4273-910c-3e550d000e29,Owned,,9780000000007,Software Testing Techniques,K. Desai,Campus Press,2024,1st,Computer Science,English,500.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+0f86ad2d-abac-4aa8-b2f4-92b824c4ad75,Owned,,9780000000008,Requirements Analysis Workshop,S. Patel,Campus Press,2024,1st,Computer Science,English,525.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+bbb532dd-7103-429a-bb78-e15a627fc0ef,Owned,,9780000000009,Web Application Development,A. Reddy,Campus Press,2024,1st,Computer Science,English,550.00,2,2,Good,Unread,Sample catalog book,2026-10-21,false,1
+f0b9151c-394a-4804-b480-01a084359e71,Owned,,9780000000010,Object-Oriented Design Patterns,D. Shah,Campus Press,2024,1st,Computer Science,English,575.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+18d79262-9fe5-43cc-9461-ead2233d7009,Owned,,9780000000011,Discrete Mathematics for Computing,T. Menon,Campus Press,2024,1st,Computer Science,English,600.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+cad23ff2-f39e-4698-ab15-cd47451729cf,Owned,,9780000000012,Information Security Basics,A. Joshi,Campus Press,2024,1st,Computer Science,English,625.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+c15aecfb-1d31-4a07-9006-baf5d6ec674f,Owned,,9780000000013,Cloud Computing Concepts,R. Kapoor,Campus Press,2024,1st,Computer Science,English,650.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+a03ec5e5-a426-4546-b701-b45024412fbd,Owned,,9780000000014,Human-Computer Interaction,A. Banerjee,Campus Press,2024,1st,Computer Science,English,675.00,1,1,Good,Unread,Sample catalog book,2026-10-21,false,1
+b5070eab-147b-4543-b980-4ea05c9ca295,Borrowed,1b52b72d-0eee-4413-ab88-d56ddeae5015,0000000000000,Test,Test,,,,,,0.00,1,1,Good,Unread,,2026-10-28,true,1

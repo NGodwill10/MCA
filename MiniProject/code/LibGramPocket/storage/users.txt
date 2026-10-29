@@ -1,0 +1,4 @@
+userId,username,displayName,salt,passwordHash,createdAt,schemaVersion
+bb8b9a5b-aa86-41d8-b4a8-6087922975ea,Username,Username,mbnvJmCMrloQ6YE0lO6xmw==,pn3fZTDrp4VJ3/GpCyzrOCnHPDtENxnzbKuY78nvdZs=,2026-10-20T19:31:29.245355200
+f1cab797-1bfe-4ae0-929b-f2e384c3a307,admin,admin,T0ljzqr+entZWOo5W7f6kg==,EPI5w3QCA34pkjuSWRWgXjovAkmULB0foayDDxxyiL4=,2026-10-21T17:06:43.029844400,1
+5282c968-0711-43a7-9ee9-653a44a1516e,Yeshwant,Yeshwant,LWzN3uIEBY2W6iAWtBHvVA==,6UaH+A91X3PiQtqmerQVFUrqYBe5FiBKBP180xzmGuc=,2026-10-21T21:44:26.171469200,1

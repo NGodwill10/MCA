@@ -1,0 +1,1 @@
+loanId,direction,bookId,bookTitleSnapshot,contactId,issueDate,dueDate,returnDate,status,baseCharge,rentCharge,overduePenalty,damageCharge,returnCondition,paymentStatus,pricingSnapshot,schemaVersion
